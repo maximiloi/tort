@@ -1,0 +1,41 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: @linen;
+  color: @black;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 18px;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}

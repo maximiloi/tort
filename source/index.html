@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Торты</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url("psd/320.png");
+  }
+
+  /* Планшет */
+  @media (min-width: 768px) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url("psd/768.png");
+    }
+  }
+
+  /* Десктоп */
+  @media (min-width: 960px) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url("psd/1366.png");
+    }
+  }
+
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
+
+<body>
+
+  <header class="header">
+    <a href="" class="header-logo">
+      <picture>
+        <source media="(min-width: 1366px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Логотип Торты на заказ">
+      </picture>
+    </a>
+    <nav class="main-menu main-nav--opened  main-nav--nojs">
+      <div class="main-nav__modal">
+        <ul class="main-nav__list  site-list">
+          <li class="site-list__item site-list__item--index">
+            <a href="#">Наши торты</a>
+          </li>
+          <li class="site-list__item  site-list__item--index">
+            <a href="#">Индивидуальный заказ</a>
+          </li>
+          <li class="site-list__item  site-list__item--index">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="site-list__item  site-list__item--index">
+            <a href="#">О нас</a>
+          </li>
+          <li class="site-list__item  site-list__item--index">
+            <a href="#">Как заказать</a>
+          </li>
+          <li class="site-list__item  site-list__item--index">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__wrapper">
+      <h1 class="header__title">Торты на заказ</h1>
+      <p class="header__tagline">Ручная работа</p>
+      <p class="header__text  icon  icon--natural-ingredients">Натуральные ингридиенты</p>
+      <p class="header__text  icon  icon--deliveri">Доставка бесплатно при заказе от 2000 рублей*</p>
+      <a href="" class="header__button button button--choose-cake">Выбрать торт</a>
+    </div>
+  </header>
+
+  <section class="cake__catalog">
+    <div class="cake__catalog-wrapper">
+      <h2 class="cake__catalog-title">Наши торты</h2>
+      <ul class="cake__catalog-list">
+        <li class="cake__catalog-items  cake__item-classic">Классический<span>24 вида</span></li>
+        <li class="cake__catalog-items  cake__item-mousse">Муссовый<span>12 вида</span></li>
+        <li class="cake__catalog-items  cake__item-wedding">Свадебный<span>20 вида</span></li>
+        <li class="cake__catalog-items  cake__item-men">Мужчинам<span>24 вида</span></li>
+        <li class="cake__catalog-items  cake__item-woman">Женщинам<span>24 вида</span></li>
+        <li class="cake__catalog-items  cake__item-kids">Детские<span>24 вида</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cake__order">
+    <h2 class="cake__order-title">Индивидуальный заказ</h2>
+    <p class="cake__order-tagline">Соберите торт в 3 шага</p>
+    <ul class="cake__order-list">
+      <li class="cake__order-items">
+        <h3 class="cake__order-items--title">01 Выберите начинку</h3>
+        <div class="cake__order-slider slider-filling slider__wrapper">
+          <img class="slider__wrapper-images" src="" alt="">
+          <h4 class="slider__wrapper-cake-title">Шоколадный ганаш</h4>
+          <p class="slider__wrapper-cake-text">Ароматный шоколадный бисквит, густой шоколадный крем – самый
+            шоколадный из всех возможных десертов!</p>
+          <p class="slider__wrapper-cake--price">1000 руб/кг</p>
+          <a href="" class="slider__wrapper-cake--button button button__choose-cake">Выбрать</a>
+        </div>
+      </li>
+      <li class="cake__order-items">
+        <h3 class="cake__order-items--title">02 Размер</h3>
+        <div class="cake__order-slider slider-size slider__wrapper">
+          <img class="slider__wrapper-images" src="" alt="">
+          <p class="slider__wrapper-cake-text">17-18 см Б<span>(1 кг – 6 персон)</span></p>
+          <a href="" class="slider__wrapper-cake--button button button__choose-size">Выбрать</a>
+        </div>
+      </li>
+      <li class="cake__order-items">
+        <h3 class="cake__order-items--title">03 Оформление</h3>
+        <div class="cake__order-slider slider-filling slider__wrapper">
+          <img class="slider__wrapper-images" src="" alt="">
+          <p class="slider__wrapper-cake-text">Маршмэллоу</p>
+          <p class="slider__wrapper-cake--price">600 руб/кг</p>
+          <a href="" class="slider__wrapper-cake--button button button__choose-decor">Выбрать</a>
+        </div>
+      </li>
+      <li class="cake__order-items cake__order-items--total">
+        <h5 class="cake__order-items--title">Ваш выбор</h5>
+        <p class="cake__order-items--total-title">Начинка</p>
+        <p class="cake__order-items--total-text">Шоколадный ганеш</p>
+        <p class="cake__order-items--total-title">Размер</p>
+        <p class="cake__order-items--total-text">1 кг</p>
+        <p class="cake__order-items--total-title">Оформление</p>
+        <p class="cake__order-items--total-text">Маршмэллоу</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="reviews">
+    <h2 class="reviews__title">Отзывы</h2>
+    <div class="reviews__slider  slider__wrapper">
+      <img class="reviews__author--images" src="" alt="">
+      <p class="reviews__author--name">Мария</p>
+      <p class="reviews__author--description">юрист, 33 года</p>
+      <p class="reviews__author--text">Заказывала торт брауни на юбилей мужа.Гости были в восторге! Отдельное спасибо
+        за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)</p>
+      <a href="" class="reviews__author--text-more">Развернуть</a>
+      <span class="reviews__counter">1/26</span>
+    </div>
+  </section>
+
+  <section class="about-us">
+    <h2 class="about_us__title">О нас</h2>
+    <img class="about_us__images" src="" alt="">
+    <div class="about_us__social--list">
+      <a class="about_us__social--item  social__instagram" href=""></a>
+      <a class="about_us__social--item  social__vkontakte" href=""></a>
+    </div>
+    <h3 class="about_us__title">О кондитере</h3>
+    <p class="about_us__text"> <span>Кондитер – как призвание</span>Павел — профессиональный повар в различных
+      гастрономических областях, но однажды его сердце покорило кондитерское искусство.С ранних лет он увлекался
+      утонченным мастерством и обратился к своим талантам как кондитер</p>
+    <p class="about_us__text"> <span>Принцип – натуральные ингредиенты</span>Сегодня Павел радует изделиями не только
+      близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор
+      натуральных ингредиентов.</p>
+  </section>
+
+  <section class="advantage">
+    <h2 class="advantage__title">Наши преимущества</h2>
+    <p class="advantage__tagline">Почему нас выбирают</p>
+    <p class="advantage__text  icon  icon--natural-ingredients-big"> <span>Без искусственных добавок</span>Работаем с
+      натуральными ингредиентами и свежими продуктами</p>
+    <p class="advantage__text  icon  icon--natural-fresh-big"> <span>Свежий торт в день торжества</span>Торты
+      изготавливаются в течение суток до отправки</p>
+  </section>
+
+  <section class="customer-care">
+    <h2 class="customer-care__title">Забота о клиентах</h2>
+    <p class="customer-care__tagline">Для нас важно</p>
+    <p class="customer-care__text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был
+      создан исключительно для вас и для вашего события.</p>
+		</section>
+		
+</body>
+
+</html>
