@@ -2,7 +2,7 @@
   "name": "tort",
   "version": "0.0.1",
   "private": true,
-  "description": "Стартовый шаблон",
+  "description": "Адаптивный сайт для кондитерских, продажа тортов",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "8.3.x",
