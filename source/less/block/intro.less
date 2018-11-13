@@ -1,13 +1,17 @@
 .intro {
     margin: 0 auto;
-    margin-bottom: 65px;
+    margin-bottom: 255px;
     padding: 0;
-    background-image: url("@{images}/intro-picture.png");
+    width: 320px;
+    height: 225px;
+    text-align: center;
     background-repeat: no-repeat;
     background-position-y: -40px;
-    max-width: 320px;
-    width: 100%;
-    text-align: center;
+    background-size: cover;
+    background-image: url("@{images}/intro-picture-mobile@1x.png");
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("@{images}/intro-picture-mobile@2x.png");
+    }
 }
 
 .intro__title {

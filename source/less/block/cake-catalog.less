@@ -1,0 +1,96 @@
+.cake-catalog {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0;
+    max-width: 320px;
+    width: 100%;
+}
+
+.cake-catalog__title {
+    margin: 0;
+    margin-bottom: 33px;
+    padding: 0;
+    text-align: center;
+    font-family: "PlayfairDisplayBold", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: @text-color;
+}
+
+.cake-catalog__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cake-catalog__item {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 280px;
+    height: 120px;
+    text-align: left;
+    background-color: @white;
+    background-size: contain;
+    &--classic {
+        background-image: url("@{images}/classic-mobile@1x.jpg");
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url("@{images}/classic-mobile@2x.jpg");
+        }
+    }
+    &--mousse {
+        background-image: url("@{images}/mousse-mobile@1x.jpg");
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url("@{images}/mousse-mobile@2x.jpg");
+        }
+    }
+    &--wedding {
+        background-image: url("@{images}/wedding-mobile@1x.jpg");
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url("@{images}/wedding-mobile@2x.jpg");
+        }
+    }
+    &--men {
+        background-image: url("@{images}/men-mobile@1x.jpg");
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url("@{images}/men-mobile@2x.jpg");
+        }
+    }
+    &--woman {
+        background-image: url("@{images}/woman-mobile@1x.jpg");
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url("@{images}/woman-mobile@2x.jpg");
+        }
+    }
+    &--kids {
+        background-image: url("@{images}/kids-mobile@1x.jpg");
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url("@{images}/kids-mobile@2x.jpg");
+        }
+    }
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.cake-catalog__item p {
+    margin: 0;
+    padding-left: 12px;
+    padding-top: 15px;
+    font-family: "Circe", "Arial", sans-serif;
+    color: @text-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: left;
+}
+
+.cake-catalog__item span {
+    padding-left: 12px;
+    font-family: "Circe", "Arial", sans-serif;
+    color: @text-color;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: left;
+}
