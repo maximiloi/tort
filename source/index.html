@@ -8,7 +8,7 @@
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<!-- Pixel Glass -->
+<!-- Pixel Glass ->
 <style>
   HTML {
     background-repeat: no-repeat;
@@ -42,55 +42,53 @@
 
   <header class="header">
     <a href="" class="header-logo">
-      <picture>
-        <source media="(min-width: 1366px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img src="img/logo-mobile.svg" alt="Логотип Торты на заказ">
-      </picture>
+      <h1 class="header-logo__title">Cakes</h1>
     </a>
-    <nav class="main-menu main-nav--opened  main-nav--nojs">
+    <nav class="main-nav main-nav--opened  main-nav--nojs">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__modal">
         <ul class="main-nav__list  site-list">
-          <li class="site-list__item site-list__item--index">
+          <li class="site-list__item">
             <a href="#">Наши торты</a>
           </li>
-          <li class="site-list__item  site-list__item--index">
+          <li class="site-list__item">
             <a href="#">Индивидуальный заказ</a>
           </li>
-          <li class="site-list__item  site-list__item--index">
+          <li class="site-list__item">
             <a href="#">Отзывы</a>
           </li>
-          <li class="site-list__item  site-list__item--index">
+          <li class="site-list__item">
             <a href="#">О нас</a>
           </li>
-          <li class="site-list__item  site-list__item--index">
+          <li class="site-list__item">
             <a href="#">Как заказать</a>
           </li>
-          <li class="site-list__item  site-list__item--index">
+          <li class="site-list__item">
             <a href="#">Контакты</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="header__wrapper">
-      <h1 class="header__title">Торты на заказ</h1>
-      <p class="header__tagline">Ручная работа</p>
-      <p class="header__text  icon  icon--natural-ingredients">Натуральные ингридиенты</p>
-      <p class="header__text  icon  icon--deliveri">Доставка бесплатно при заказе от 2000 рублей*</p>
-      <a href="" class="header__button button button--choose-cake">Выбрать торт</a>
-    </div>
   </header>
 
-  <section class="cake__catalog">
-    <div class="cake__catalog-wrapper">
-      <h2 class="cake__catalog-title">Наши торты</h2>
-      <ul class="cake__catalog-list">
-        <li class="cake__catalog-items  cake__item-classic">Классический<span>24 вида</span></li>
-        <li class="cake__catalog-items  cake__item-mousse">Муссовый<span>12 вида</span></li>
-        <li class="cake__catalog-items  cake__item-wedding">Свадебный<span>20 вида</span></li>
-        <li class="cake__catalog-items  cake__item-men">Мужчинам<span>24 вида</span></li>
-        <li class="cake__catalog-items  cake__item-woman">Женщинам<span>24 вида</span></li>
-        <li class="cake__catalog-items  cake__item-kids">Детские<span>24 вида</span></li>
+  <section class="intro">
+    <h2 class="intro__title">Торты на заказ</h2>
+    <p class="intro__tagline">Ручная работа</p>
+    <p class="intro__text  icon  icon--natural-ingredients">Натуральные ингридиенты</p>
+    <p class="intro__text  icon  icon--deliveri">Доставка бесплатно при заказе от 2000 рублей*</p>
+    <a href="" class="intro__button button button--choose-cake">Выбрать торт</a>
+  </section>
+
+  <section class="cake-catalog">
+    <div class="cake-catalog__wrapper">
+      <h2 class="cake-catalog__title">Наши торты</h2>
+      <ul class="cake-catalog__list">
+        <li class="cake-catalog__item  cake-catalog__item--classic">Классический<span>24 вида</span></li>
+        <li class="cake-catalog__item  cake-catalog__item--mousse">Муссовый<span>12 вида</span></li>
+        <li class="cake-catalog__item  cake-catalog__item--wedding">Свадебный<span>20 вида</span></li>
+        <li class="cake-catalog__item  cake-catalog__item--men">Мужчинам<span>24 вида</span></li>
+        <li class="cake-catalog__item  cake-catalog__item--woman">Женщинам<span>24 вида</span></li>
+        <li class="cake-catalog__item  cake-catalog__item--kids">Детские<span>24 вида</span></li>
       </ul>
     </div>
   </section>
@@ -262,6 +260,7 @@
     <p class="footer_text">© 2018 Cakes</p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>
