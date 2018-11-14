@@ -1,22 +1,23 @@
 .header {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 40px;
+  max-width: 320px;
+  width: 100%;
+  background-color: @white;
+
+  &-logo__title {
     margin: 0;
-    margin: 0 auto;
+    margin-left: 19px;
     padding: 0;
-    min-height: 40px;
-    max-width: 320px;
-    width: 100%;
-    background-color: @white;
-    &-logo__title {
-        margin: 0;
-        margin-left: 19px;
-        padding: 0;
-        padding-top: 11px;
-        color: @black;
-        text-align: left;
-        font-size: 16px;
-        font-family: "PlayfairDisplayBold", "Arial", sans-serif;
-    }
-    &__wrapper {
-        background-color: @rose-background;
-    }
+    padding-top: 11px;
+    color: @black;
+    text-align: left;
+    font-size: 16px;
+    font-family: "PlayfairDisplayBold", "Arial", sans-serif;
+  }
+
+  &__wrapper {
+    background-color: @rose-background;
+  }
 }
