@@ -1,0 +1,117 @@
+.slider-wrapper {
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.slider-wrapper__numbertext {
+  font-family: "Circe";
+  color: @white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 75px;
+  right: 0;
+}
+
+.slider-dot__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+.slider-dot {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 2px;
+  background-color: @alto;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dot:hover {
+  height: 8px;
+  width: 8px;
+  background-color: @button-color-hover;
+}
+
+/* Fading animation */
+
+.slider-fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -95px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-wrapper__images {
+  margin-bottom: 15px;
+}
+
+.slider-wrapper__cake-title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  font-family: "CirceBold", "Arial";
+  font-size: 16px;
+}
+
+.slider-wrapper__cake-text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: "CirceRegular", "Ärial";
+  font-size: 14px;
+}
+
+.slider-wrapper__cake-price {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "PlayfairDisplayBold";
+  font-size: 18px;
+  text-align: center;
+}
+

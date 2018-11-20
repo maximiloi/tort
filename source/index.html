@@ -49,7 +49,7 @@
       <p class="intro__text  icon  icon--natural-ingredients">Натуральные ингридиенты</p>
       <p class="intro__text  icon  icon--deliveri">Доставка бесплатно при заказе от 2000 рублей*</p>
     </div>
-    <a href="" class="intro__button button button--choose-cake">Выбрать торт</a>
+    <a href="" class="intro__button button button__choose-cake">Выбрать торт</a>
   </section>
 
   <section class="cake-catalog">
@@ -83,18 +83,89 @@
     <p class="cake-order__tagline">Соберите торт в 3 шага</p>
     <ul class="cake-order__list">
       <li class="cake-order__items">
-        <h3 class="cake-order__items-title">01 Выберите начинку</h3>
-        <div class="cake-order__slider slider-filling slider-wrapper">
-          <img class="slider-wrapper__images" src="" alt="">
+        <h3 class="cake-order__items-title"><span>01</span> Выберите начинку</h3>
+
+        <div class="slider-dot__wrapper">
+          <span class="slider-dot" onclick="currentSlide(1)"></span>
+          <span class="slider-dot" onclick="currentSlide(2)"></span>
+          <span class="slider-dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="cake-order__slider slider-fade slider-wrapper slider-wrapper__filling">
+          <div class="slider-wrapper__numbertext">1 / 3</div>
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/chocolate-ganache-desktop@1x.webp 1x, img/chocolate-ganache-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/chocolate-ganache-tablet@1x.webp 1x, img/chocolate-ganache-tablet@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/chocolate-ganache-mobile.webp 1x, img/chocolate-ganache-mobile@2x.webp 2x">
+
+            <!-- <source media="(min-width: 1300px)" srcset="img/chocolate-ganache-desktop@1x.png 1x, img/chocolate-ganache-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chocolate-ganache-tablet@1x.jpg 1x, img/chocolate-ganache-tablet@2x.jpg 2x"> -->
+            <img class="slider-wrapper__images" src="img/chocolate-ganache-mobile@1x.jpg" srcset="img/chocolate-ganache-mobile@2x.jpg 2x"
+              width="" height="" alt="">
+          </picture>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
           <h4 class="slider-wrapper__cake-title">Шоколадный ганаш</h4>
           <p class="slider-wrapper__cake-text">Ароматный шоколадный бисквит, густой шоколадный крем – самый
             шоколадный из всех возможных десертов!</p>
           <p class="slider-wrapper__cake-price">1000 руб/кг</p>
           <a href="" class="slider-wrapper__cake-button button button__choose-cake">Выбрать</a>
         </div>
+
+        <div class="cake-order__slider slider-fade slider-wrapper slider-wrapper__filling">
+          <div class="slider-wrapper__numbertext">2 / 3</div>
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/chocolate-ganache-desktop@1x.webp 1x, img/chocolate-ganache-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/chocolate-ganache-tablet@1x.webp 1x, img/chocolate-ganache-tablet@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/chocolate-ganache-mobile.webp 1x, img/chocolate-ganache-mobile@2x.webp 2x">
+
+            <!-- <source media="(min-width: 1300px)" srcset="img/chocolate-ganache-desktop@1x.png 1x, img/chocolate-ganache-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chocolate-ganache-tablet@1x.jpg 1x, img/chocolate-ganache-tablet@2x.jpg 2x"> -->
+            <img class="slider-wrapper__images" src="img/chocolate-ganache-mobile@1x.jpg" srcset="img/chocolate-ganache-mobile@2x.jpg 2x"
+              width="" height="" alt="">
+          </picture>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <h4 class="slider-wrapper__cake-title">Lorem, ipsum.</h4>
+          <p class="slider-wrapper__cake-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            error quis
+            beatae deseruntDignissimos error quis beatae deserunt aliquid non dolorem, sapiente rem dolor quisquam!</p>
+          <p class="slider-wrapper__cake-price">1000 руб/кг</p>
+          <a href="" class="slider-wrapper__cake-button button button__choose-cake">Выбрать</a>
+        </div>
+
+        <div class="cake-order__slider slider-fade slider-wrapper slider-wrapper__filling">
+          <div class="slider-wrapper__numbertext">3 / 3</div>
+          <picture>
+            <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/chocolate-ganache-desktop@1x.webp 1x, img/chocolate-ganache-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/chocolate-ganache-tablet@1x.webp 1x, img/chocolate-ganache-tablet@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/chocolate-ganache-mobile.webp 1x, img/chocolate-ganache-mobile@2x.webp 2x">
+
+            <!-- <source media="(min-width: 1300px)" srcset="img/chocolate-ganache-desktop@1x.png 1x, img/chocolate-ganache-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chocolate-ganache-tablet@1x.jpg 1x, img/chocolate-ganache-tablet@2x.jpg 2x"> -->
+            <img class="slider-wrapper__images" src="img/chocolate-ganache-mobile@1x.jpg" srcset="img/chocolate-ganache-mobile@2x.jpg 2x"
+              width="" height="" alt="">
+          </picture>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <h4 class="slider-wrapper__cake-title">Lorem, ipsum dolor.</h4>
+          <p class="slider-wrapper__cake-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
+            repellendus alias maiores officia dolore praesentium explicabo!</p>
+          <p class="slider-wrapper__cake-price">1000 руб/кг</p>
+          <a href="" class="slider-wrapper__cake-button button button__choose-cake">Выбрать</a>
+        </div>
+
+
+
       </li>
       <li class="cake-order__items">
-        <h3 class="cake-order__items-title">02 Размер</h3>
+        <h3 class="cake-order__items-title"><span>02</span>Размер</h3>
         <div class="cake-order__slider slider-size slider-wrapper">
           <img class="slider-wrapper__images" src="" alt="">
           <p class="slider-wrapper__cake-text">17-18 см Б<span>(1 кг – 6 персон)</span></p>
@@ -102,7 +173,7 @@
         </div>
       </li>
       <li class="cake-order__items">
-        <h3 class="cake-order__items-title">03 Оформление</h3>
+        <h3 class="cake-order__items-title"><span>03</span> Оформление</h3>
         <div class="cake-order__slider slider-filling slider-wrapper">
           <img class="slider-wrapper__images" src="" alt="">
           <p class="slider-wrapper__cake-text">Маршмэллоу</p>
@@ -113,7 +184,7 @@
       <li class="cake-order__items-total">
         <h5 class="cake-order__items-title">Ваш выбор</h5>
         <p class="cake-order__items-total  cake-order__items-total--title">Начинка</p>
-        <p class="cake-order__items-total  cake-order__items-total--text">Шоколадный ганеш</p>
+        <p class="cake-order__items-total  slider-wrapper__cake-title">Шоколадный ганеш</p>
         <p class="cake-order__items-total  cake-order__items-total--title">Размер</p>
         <p class="cake-order__items-total  cake-order__items-total--text">1 кг</p>
         <p class="cake-order__items-total  cake-order__items-total--title">Оформление</p>
@@ -210,14 +281,14 @@
       </div>
       <button class="contact__form__button  button" type="submit">Отправить</button>
     </form>
-    <p class="contact_phone">Или позвоните по телефону:+7 906 899 92 96</p>
+    <p class="contact__phone">Или позвоните по телефону:+7 906 899 92 96</p>
     <p class="contact__email">Наша почта : bakerybypavel@mail.ru</p>
     <p class="contact__social">Мы в социальных сетях:</p>
-    <ul class="social-list">
-      <li class="social-item instagram">
+    <ul class="contact__social-list">
+      <li class="contact__social-item  contact__social-item--instagram">
         <a href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
       </li>
-      <li class="social-item vkontakte">
+      <li class="contact__social-item  contact__social-item--vkontakte">
         <a href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
       </li>
     </ul>
