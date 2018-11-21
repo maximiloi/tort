@@ -1,11 +1,16 @@
 .how-to-order {
+  margin: 0;
   margin-top: -270px;
-  background-color: @button-color-hover;
+  padding: 0;
   color: @white;
+  min-height: 480px;
+  background: url("/img/gift@1x.jpg") 50% 50% no-repeat;
+  background-color: @button-color-hover;
 }
 
 .how-to-order__title {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
   padding: 0;
   padding-top: 30px;
   max-width: 280px;
@@ -15,5 +20,37 @@
 }
 
 .how-to-order__list {
-  list-style-type: decimal;
+  list-style: none;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.how-to-order__item {
+  display: flex;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.how-to-order__item-title {
+  margin: 0;
+  padding: 0;
+  font-family: "CirceBold", "Arial";
+  font-size: 15px;
+}
+
+.how-to-order__item-text {
+  margin: 0;
+  padding: 0;
+  font-family: "CirceRegular", "Arial";
+  font-size: 14px;
+}
+
+.how-to-order__item-number {
+  margin: 0;
+  padding: 0;
+  font-family: "PlayfairDisplayBold", "Arial";
+  font-size: 35px;
+  min-width: 30px;
 }
