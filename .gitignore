@@ -4,6 +4,7 @@
 *.log
 *.pdf
 *.psd
+*.icloud
 *.sublime*
 node_modules/
 npm-debug.*
