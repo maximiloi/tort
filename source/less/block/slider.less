@@ -1,18 +1,16 @@
 .slider-wrapper {
   max-width: 240px;
-  width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
   position: relative;
 }
 
 .slider-wrapper__numbertext {
-  font-family: "Circe";
+  font-family: "Circe", "Arial", sans-serif;
   color: @white;
   font-size: 12px;
   font-weight: 400;
   line-height: 30px;
-  font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 75px;
@@ -28,7 +26,6 @@
 
 .reviews__slider-dot,
 .slider-dot {
-  margin: 0;
   padding: 0;
   cursor: pointer;
   height: 6px;
@@ -54,10 +51,11 @@
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
+
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -86,6 +84,8 @@
 }
 
 .slider-wrapper__images {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 15px;
 }
 
@@ -93,7 +93,7 @@
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
-  font-family: "CirceBold", "Arial";
+  font-family: "CirceBold", "Arial", sans-serif;
   font-size: 16px;
 }
 
@@ -101,15 +101,24 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  font-family: "CirceRegular", "Ärial";
+  font-family: "CirceRegular", "Ärial", sans-serif;
   font-size: 14px;
+}
+
+.slider-wrapper__cake-name {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: "CirceRegular", "Ärial", sans-serif;
+  font-size: 14px;
+  text-align: center;
 }
 
 .slider-wrapper__cake-price {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  font-family: "PlayfairDisplayBold";
+  font-family: "PlayfairDisplayBold", "Arial", sans-serif;
   font-size: 18px;
   text-align: center;
 }

@@ -37,14 +37,18 @@
   background-color: @white;
   padding-top: 20px;
   padding-bottom: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
 }
 
 .cake-order__items-title {
   margin: 0;
   padding: 0;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-family: "PlayfairDisplayBold", "Arial", sans-serif;
   color: @button-color;
   text-align: left;
@@ -56,4 +60,80 @@
     font-size: 30px;
     line-height: 10px;
   }
+}
+
+.cake-order__size {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 110px;
+  height: 110px;
+  border: 4px dotted black;
+  border-radius: 50%;
+}
+
+.cake-order__size span {
+  display: block;
+  text-align: center;
+  height: 110px;
+  font-family: "CirceRegular", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 110px;
+}
+
+.cake-order__size-text {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0;
+  text-align: center;
+  font-family: "CirceRegular", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.cake-order__size-text span {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.cake-order__items-total {
+  width: 280px;
+  background-color: @white;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 1px;
+}
+
+.cake-order__items-total--title {
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: "PlayfairDisplayBold", "Arial", sans-serif;
+  font-size: 22px;
+}
+
+.cake-order__items-total--wrapper {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.cake-order__items-total--subtitle {
+  font-family: "IntroScriptRH2Base", "Arial", sans-serif;
+  color: @button-color;
+  font-size: 20px;
+  text-align: center;
+}
+
+.cake-order__items-total--text {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "CirceRegular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  width: 240px;
+  border: 1px solid @alto;
+  border-radius: 15px;
 }
