@@ -178,45 +178,6 @@
       <span class="reviews__counter">1/26</span>
     </div>
 
-    <!-- <div class="reviews__slider  slider-wrapper__reviews">
-      <picture>
-        <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
-
-        <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/-tablet@1x.jpg 1x, img/-tablet@2x.jpg 2x">
-        <img class="reviews__author-image" src="img/author-images-mobile@1x.jpg" srcset="img/author-images-mobile@2x.jpg 2x"
-          width="" height="" alt="">
-      </picture>
-      <p class="reviews__author-name">Павел</p>
-      <p class="reviews__author-description">аквалангист, 33 года</p>
-      <p class="reviews__author-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laudantium, dolore consectetur dolores quasi in ducimus vitae vero quis quaerat eius laborum numquam perferendis dolorem alias.
-        <a href="" class="reviews__author-more">Развернуть</a>
-      </p>
-      <span class="reviews__counter">2/26</span>
-    </div>
-
-    <div class="reviews__slider  slider-wrapper__reviews">
-      <picture>
-        <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
-
-        <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/-tablet@1x.jpg 1x, img/-tablet@2x.jpg 2x">
-        <img class="reviews__author-image" src="img/author-images-mobile@1x.jpg" srcset="img/author-images-mobile@2x.jpg 2x"
-          width="" height="" alt="">
-      </picture>
-      <p class="reviews__author-name">Фрося</p>
-      <p class="reviews__author-description">Пекарь, 33 года</p>
-      <p class="reviews__author-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe unde ratione perspiciatis accusantium voluptatibus molestiae sit eius non aut nam?
-        <a href="" class="reviews__author-more">Развернуть</a>
-      </p>
-      <span class="reviews__counter">3/26</span>
-    </div> -->
-
-
     <div class="slider-dot__wrapper">
       <span class="reviews__slider-dot" onclick="currentSlide(1)"></span>
       <span class="reviews__slider-dot" onclick="currentSlide(2)"></span>
@@ -226,19 +187,21 @@
 
   <section class="about-us">
     <h2 class="about-us__title">О нас</h2>
-    <picture>
-      <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
-      <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
+    <div class="about-us__wrapper">
+      <picture>
+        <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
 
-      <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
-      <source media="(min-width: 768px)" srcset="img/-tablet@1x.jpg 1x, img/-tablet@2x.jpg 2x">
-      <img class="about-us__images" src="img/foto-mobile@1x.jpg" srcset="img/foto-mobile@2x.jpg 2x" width="" height=""
-        alt="">
-    </picture>
-    <div class="about-us__social-list social">
-      <a class="about-us__social-item  social__icon-instagram" href=""></a>
-      <a class="about-us__social-item  social__icon-vkontakte" href=""></a>
+        <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/-tablet@1x.jpg 1x, img/-tablet@2x.jpg 2x">
+        <img class="about-us__images" src="img/foto-mobile@1x.jpg" srcset="img/foto-mobile@2x.jpg 2x" width="" height=""
+          alt="">
+      </picture>
+      <div class="about-us__social-list icon">
+        <a class="about-us__social-item  icon__instagram" href=""></a>
+        <a class="about-us__social-item  icon__vkontakte" href=""></a>
+      </div>
     </div>
     <h3 class="about-us__tagline">О кондитере</h3>
     <p class="about-us__subtitle">Кондитер – как призвание</p>
@@ -359,7 +322,11 @@
           <a href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
         </li>
       </ul>
-      <p class="footer_text">© 2018 Cakes</p>
+      <div class="footer__wrapper--bootom">
+        <p class="footer__text">© 2018 Cakes</p>
+        <img src="/img/logomak_logo.svg" alt="" class="footer__iloi">
+      </div>
+
     </div>
   </footer>
 
