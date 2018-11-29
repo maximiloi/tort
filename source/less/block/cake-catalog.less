@@ -4,9 +4,6 @@
   padding: 0;
   max-width: 320px;
   width: 100%;
-  @media (min-width: @tablet-width) {
-    max-width: 728px;
-  }
 }
 
 .cake-catalog__title {
@@ -18,16 +15,11 @@
   font-size: 24px;
   font-weight: 700;
   color: @text-color;
-  @media (min-width: @tablet-width) {
-    font-size: 28px;
-    text-align: left;
-  }
 }
 
 .cake-catalog__list {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .cake-catalog__item {
@@ -39,6 +31,7 @@
   text-align: left;
   background-color: @white;
   background-size: contain;
+  background-repeat: no-repeat;
   &--classic {
     background-image: url("@{images}/classic-mobile@1x.jpg");
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -100,4 +93,67 @@
   font-weight: 400;
   line-height: 10px;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .cake-catalog {
+    max-width: 728px;
+  }
+  .cake-catalog__title {
+    font-size: 28px;
+    text-align: left;
+  }
+  .cake-catalog__item {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    &--classic {
+      width: 420px;
+      height: 390px;
+      background-image: url("@{images}/classic-tablet@1x.png");
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("@{images}/classic-tablet@2x.png");
+      }
+    }
+    &--mousse {
+      width: 290px;
+      height: 185px;
+      background-image: url("@{images}/mousse-tablet@1x.png");
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("@{images}/mousse-tablet@2x.png");
+      }
+    }
+    &--wedding {
+      width: 290px;
+      height: 185px;
+      background-image: url("@{images}/wedding-tablet@1x.png");
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("@{images}/wedding-tablet@2x.png");
+      }
+    }
+    &--men {
+      width: 290px;
+      height: 185px;
+      background-image: url("@{images}/men-tablet@1x.png");
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("@{images}/men-tablet@2x.png");
+      }
+    }
+    &--woman {
+      width: 290px;
+      height: 185px;
+      background-image: url("@{images}/woman-tablet@1x.png");
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("@{images}/woman-tablet@2x.png");
+      }
+    }
+    &--kids {
+      width: 420px;
+      height: 390px;
+      background-image: url("@{images}/kids-tablet@1x.png");
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("@{images}/kids-tablet@2x.png");
+      }
+    }
+  }
 }
