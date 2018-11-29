@@ -4,6 +4,9 @@
   padding: 0;
   max-width: 320px;
   width: 100%;
+  @media (min-width: @tablet-width) {
+    max-width: 728px;
+  }
 }
 
 .cake-catalog__title {
@@ -15,6 +18,10 @@
   font-size: 24px;
   font-weight: 700;
   color: @text-color;
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    text-align: left;
+  }
 }
 
 .cake-catalog__list {
@@ -32,55 +39,42 @@
   text-align: left;
   background-color: @white;
   background-size: contain;
-
   &--classic {
     background-image: url("@{images}/classic-mobile@1x.jpg");
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/classic-mobile@2x.jpg");
     }
   }
-
   &--mousse {
     background-image: url("@{images}/mousse-mobile@1x.jpg");
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/mousse-mobile@2x.jpg");
     }
   }
-
   &--wedding {
     background-image: url("@{images}/wedding-mobile@1x.jpg");
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/wedding-mobile@2x.jpg");
     }
   }
-
   &--men {
     background-image: url("@{images}/men-mobile@1x.jpg");
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/men-mobile@2x.jpg");
     }
   }
-
   &--woman {
     background-image: url("@{images}/woman-mobile@1x.jpg");
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/woman-mobile@2x.jpg");
     }
   }
-
   &--kids {
     background-image: url("@{images}/kids-mobile@1x.jpg");
-
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/kids-mobile@2x.jpg");
     }
   }
-
   &:hover {
     opacity: 0.7;
   }
