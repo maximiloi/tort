@@ -1,6 +1,5 @@
 .icon__natural-ingredients {
   position: relative;
-
   &::before {
     position: absolute;
     top: -2px;
@@ -11,12 +10,18 @@
     background-image: url("@{images}/icon--natural-ingredients.svg");
     background-repeat: no-repeat;
     background-size: 33px 33px;
+    @media (min-width: @tablet-width) {
+      width: 55px;
+      height: 55px;
+      background-size: 55px 55px;
+      top: -25px;
+      left: -65px;
+    }
   }
 }
 
 .icon__deliveri {
   position: relative;
-
   &::before {
     position: absolute;
     top: -2px;
@@ -27,6 +32,13 @@
     background-image: url("@{images}/icon--deliveri.svg");
     background-repeat: no-repeat;
     background-size: 33px 33px;
+    @media (min-width: @tablet-width) {
+      width: 55px;
+      height: 55px;
+      background-size: 55px 55px;
+      top: -25px;
+      left: -65px;
+    }
   }
 }
 
@@ -56,7 +68,6 @@
 
 .icon__natural-ingredients-big {
   position: relative;
-
   &::after {
     position: absolute;
     top: -70px;
@@ -72,7 +83,6 @@
 
 .icon__tort {
   position: relative;
-
   &::after {
     position: absolute;
     top: -60px;
