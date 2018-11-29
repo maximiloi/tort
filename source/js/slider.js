@@ -1,32 +1,34 @@
 "use strict";
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+var controls = document.querySelectorAll(".slider__control");
+for (var i = 0; i < controls.length; i++) {
+  controls[i].style.display = "inline-block";
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+var slides = document.querySelectorAll(".slider");
+var currentSlide = 0;
+// var slideInterval = setInterval(nextSlide, 2000);
+
+function nextSlide() {
+  goToSlide(currentSlide + 1);
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.querySelector(".slider-wrapper__filling");
-  var dots = document.querySelector(".slider-dot");
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+function previousSlide() {
+  goToSlide(currentSlide - 1);
 }
+
+function goToSlide(n) {
+  slides[currentSlide].className = "slider-fade slider__filling slider";
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].className = "slider-fade slider__filling slider show";
+}
+
+var next = document.querySelectorAll(".next");
+var previous = document.querySelectorAll(".prev");
+
+next.onclick = function () {
+  nextSlide();
+};
+previous.onclick = function () {
+  previousSlide();
+};
