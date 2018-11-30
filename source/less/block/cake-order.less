@@ -2,6 +2,9 @@
   margin: 0 auto;
   max-width: 280px;
   width: 100%;
+  @media (min-width: @tablet-width) {
+    max-width: 728px;
+  }
 }
 
 .cake-order__title {
@@ -14,6 +17,10 @@
   font-size: 24px;
   font-weight: 700;
   color: @text-color;
+  @media (min-width: @tablet-width) {
+    width: 728px;
+    font-size: 28px;
+  }
 }
 
 .cake-order__tagline {
@@ -25,6 +32,9 @@
   font-size: 22px;
   line-height: 10px;
   color: @tagline-color;
+  @media (min-width: @tablet-width) {
+    font-size: 26px;
+  }
 }
 
 .cake-order__list {
@@ -38,7 +48,6 @@
   padding-top: 20px;
   padding-bottom: 10px;
   margin-bottom: 15px;
-
   &:nth-child(3) {
     margin-bottom: 0;
   }
@@ -54,30 +63,120 @@
   text-align: left;
   font-size: 16px;
   line-height: 5px;
-
   & span {
     margin-right: 10px;
     font-size: 30px;
     line-height: 10px;
+  }
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0;
+    margin-left: 45px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    width: 90px;
+    & span {
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-size: 36px;
+      line-height: 50px;
+    }
   }
 }
 
 .cake-order__size {
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 110px;
-  height: 110px;
-  border: 4px dotted black;
-  border-radius: 50%;
-}
-
-.cake-order__size span {
-  display: block;
-  text-align: center;
-  height: 110px;
   font-family: "CirceRegular", "Arial", sans-serif;
   font-size: 17px;
+  border: 4px dotted black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.one {
+  width: 110px;
+  height: 110px;
   line-height: 110px;
+  @media (min-width: @tablet-width) {
+    width: 77px;
+    height: 77px;
+    line-height: 77px;
+  }
+}
+
+.two {
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+}
+
+.five {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border: 4px dotted black;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+.eight {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 4px dotted black;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border: 4px dotted black;
+    border-radius: 50%;
+    top: 30px;
+    left: 30px;
+  }
+}
+
+.cake-order__size-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+
+.cake-order__size-item {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.show {
+  display: block;
 }
 
 .cake-order__size-text {

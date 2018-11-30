@@ -2,6 +2,9 @@
   width: 240px;
   margin: 0 auto;
   position: relative;
+  @media (min-width: @tablet-width) {
+    width: 445px;
+  }
 }
 
 .slider__list {
@@ -11,18 +14,29 @@
 }
 
 .slider {
-  margin-bottom: 20px; // position: absolute;
+  margin-bottom: 20px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
   z-index: 1;
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .show {
   opacity: 1;
   z-index: 2;
+}
+
+//  временно до добавления JS
+.tablet {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .slider__control {
@@ -42,11 +56,30 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   z-index: 2;
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+    top: 95px;
+    color: @button-color;
+    background-color: @white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px @button-color-hover;
+  }
+}
+
+.prev {
+  @media (min-width: @tablet-width) {
+    left: -80px;
+  }
 }
 
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  @media (min-width: @tablet-width) {
+    border-radius: 50%;
+    right: -80px;
+  }
 }
 
 .prev:hover,
@@ -60,6 +93,9 @@
   align-items: center;
   height: 20px;
   margin-bottom: 20px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .reviews__slider-dot,
@@ -97,7 +133,6 @@
   from {
     opacity: 0.4;
   }
-
   to {
     opacity: 1;
   }
@@ -107,6 +142,17 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 15px;
+  @media (min-width: @tablet-width) {
+    width: 210px;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+}
+
+.slider__wrapper-tablet {
+  @media (min-width: @tablet-width) {
+    width: 210px;
+  }
 }
 
 .slider__decor-name,
@@ -116,6 +162,9 @@
   padding: 0;
   font-family: "CirceBold", "Arial", sans-serif;
   font-size: 16px;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .text-center {
@@ -124,7 +173,7 @@
 
 .slider__numbertext {
   font-family: "Circe", "Arial", sans-serif;
-  color: #ffffff;
+  color: @white;
   font-size: 12px;
   font-weight: 400;
   line-height: 30px;
@@ -132,6 +181,12 @@
   position: absolute;
   top: 75px;
   right: 0;
+  @media (min-width: @tablet-width) {
+    color: @text-color;
+    opacity: 0.7;
+    top: 210px;
+    right: -70px;
+  }
 }
 
 .slider__text {
@@ -140,6 +195,9 @@
   padding: 0;
   font-family: "CirceRegular", "Ärial", sans-serif;
   font-size: 14px;
+  @media (min-width: @tablet-width) {
+    width: 180px;
+  }
 }
 
 .slider__name {
@@ -159,4 +217,8 @@
   font-family: "PlayfairDisplayBold", "Arial", sans-serif;
   font-size: 18px;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    margin-bottom: 40px;
+  }
 }
