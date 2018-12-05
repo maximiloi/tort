@@ -1,0 +1,14 @@
+.decor {
+  margin: 0;
+  padding: 0;
+  @media (min-width: @tablet-width) {
+    background-image: url("@{images}/bg-cake-decor-tablet@1x.png");
+    background-size: 119px 157px;
+    background-position-x: left;
+    background-position-y: 115px;
+    background-repeat: no-repeat;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("@{images}/bg-cake-decor-tablet@2x.png");
+    }
+  }
+}

@@ -100,7 +100,7 @@
       <h2 class="cake-order__title">Индивидуальный заказ</h2>
       <p class="cake-order__tagline">Соберите торт в 3 шага</p>
       <ul class="cake-order__list">
-        <li class="cake-order__items">
+        <li class="cake-order__items filling">
           <h3 class="cake-order__items-title"><span>01</span> Выберите начинку</h3>
 
           <div class="slider__wrapper">
@@ -147,7 +147,7 @@
 
           </div>
         </li>
-        <li class="cake-order__items">
+        <li class="cake-order__items size">
           <h3 class="cake-order__items-title"><span>02</span>Размер</h3>
           <div class="cake-order__slider slider-size slider-wrapper">
 
@@ -180,11 +180,11 @@
             <a href="" class="slider-wrapper__cake-button button button__choose-size">Выбрать</a>
           </div>
         </li>
-        <li class="cake-order__items">
+        <li class="cake-order__items  decor">
           <h3 class="cake-order__items-title"><span>03</span> Оформление</h3>
 
-          <div class="slider__wrapper">
-            <ul class="slider__list">
+          <div class="slider__wrapper  slider__wrapper-decor">
+            <ul class="slider__list slider__list--decor">
 
               <li class="slider-fade slider__decor slider tablet">
                 <picture>
@@ -197,54 +197,64 @@
                   <img class="slider__images" src="img/marshmallow-mobile@1x.jpg" srcset="img/marshmallow-mobile@2x.jpg 2x"
                     width="" height="" alt="">
                 </picture>
+                <p class="slider__decor-name text-center">Ягодное ассорти</p>
+                <p class="slider__decor-price">700 руб/кг</p>
+
+                <a href="" class="slider-wrapper__cake-button button button__choose-decor">Выбрать</a>
+              </li>
+              <li class="slider-fade slider__decor slider show">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/marshmallow-tablet@1x.png 1x, img/marshmallow-tablet@2x.png 2x">
+                  <img class="slider__images" src="img/marshmallow-mobile@1x.jpg" srcset="img/marshmallow-mobile@2x.jpg 2x"
+                    width="" height="" alt="">
+                </picture>
                 <p class="slider__decor-name text-center">Маршмэллоу</p>
                 <p class="slider__decor-price">600 руб/кг</p>
 
                 <a href="" class="slider-wrapper__cake-button button button__choose-decor">Выбрать</a>
               </li>
-              <li class="slider-fade slider__decor slider show">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
+            </ul>
 
-                <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/marshmallow-tablet@1x.png 1x, img/marshmallow-tablet@2x.png 2x">
-                <img class="slider__images" src="img/marshmallow-mobile@1x.jpg" srcset="img/marshmallow-mobile@2x.jpg 2x"
-                  width="" height="" alt="">
-              </picture>
-              <p class="slider__decor-name text-center">Маршмэллоу</p>
-              <p class="slider__decor-price">600 руб/кг</p>
+            <div class="slider__control slider__control-decor">
+              <a class="prev">&#10094;</a>
+              <a class="slider__control-decor next">&#10095;</a>
+            </div>
 
-              <a href="" class="slider-wrapper__cake-button button button__choose-decor">Выбрать</a>
+            <div class="slider-dot__wrapper">
+              <span class="slider-dot active"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot last"></span>
+            </div>
 
-              <div class="slider-dot__wrapper">
-                <span class="slider-dot active"></span>
-                <span class="slider-dot"></span>
-                <span class="slider-dot"></span>
-                <span class="slider-dot"></span>
-                <span class="slider-dot"></span>
-                <span class="slider-dot"></span>
-                <span class="slider-dot last"></span>
-              </div>
-
+          </div>
         </li>
-
-      </ul>
-      </div>
-      </li>
-      <li class="cake-order__items-total">
-        <h5 class="cake-order__items-total--title">Ваш выбор</h5>
-        <div class="cake-order__items-total--wrapper">
-          <p class="cake-order__items-total  cake-order__items-total--subtitle">Начинка</p>
-          <p class="cake-order__items-total  cake-order__items-total--text">Шоколадный ганеш</p>
-          <p class="cake-order__items-total  cake-order__items-total--subtitle">Размер</p>
-          <p class="cake-order__items-total  cake-order__items-total--text">1 кг</p>
-          <p class="cake-order__items-total  cake-order__items-total--subtitle">Оформление</p>
-          <p class="cake-order__items-total  cake-order__items-total--text">Маршмэллоу</p>
-        </div>
-        <a href="" class="slider-wrapper__cake-button button button__choose-decor">заказать торт</a>
-      </li>
+        <li class="cake-order__items  total">
+          <h5 class="total__title">Ваш выбор</h5>
+          <div class="total__wrapper">
+            <div class="total__wrapper--flex">
+              <p class="total__subtitle">Начинка</p>
+              <p class="total__text">Шоколадный ганеш</p>
+            </div>
+            <div class="total__wrapper--flex">
+              <p class="total__subtitle">Размер</p>
+              <p class="total__text">1 кг</p>
+            </div>
+            <div class="total__wrapper--flex">
+              <p class="total__subtitle">Оформление</p>
+              <p class="total__text">Маршмэллоу</p>
+            </div>
+          </div>
+          <a href="" class="slider-wrapper__cake-button button button__choose-decor">заказать торт</a>
+        </li>
       </ul>
     </section>
 
@@ -257,18 +267,20 @@
           <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
 
           <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/-tablet@1x.jpg 1x, img/-tablet@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/author-images-tablet@1x.jpg 1x, img/author-images-tablet@2x.jpg 2x">
           <img class="reviews__author-image" src="img/author-images-mobile@1x.jpg" srcset="img/author-images-mobile@2x.jpg 2x"
             width="" height="" alt="">
         </picture>
-        <p class="reviews__author-name">Мария</p>
-        <p class="reviews__author-description">юрист, 33 года</p>
-        <p class="reviews__author-text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное
-          спасибо
-          за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
-          <a href="" class="reviews__author-more">Развернуть</a>
-        </p>
-        <span class="reviews__counter">1/26</span>
+        <div class="review__wrapper">
+          <p class="reviews__author-name">Мария</p>
+          <p class="reviews__author-description">юрист, 33 года</p>
+          <p class="reviews__author-text">Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное
+            спасибо
+            за своевременную доставку! Теперь будем заказывать торты только у вас для наших семейных праздников:)
+            <a href="" class="reviews__author-more">Развернуть</a>
+          </p>
+          <span class="reviews__counter">1/26</span>
+        </div>
       </div>
 
       <div class="slider-dot__wrapper">
@@ -279,32 +291,43 @@
     </section>
 
     <section class="about-us">
-      <h2 class="about-us__title">О нас</h2>
       <div class="about-us__wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/-tablet@1x.jpg 1x, img/-tablet@2x.jpg 2x">
-          <img class="about-us__images" src="img/foto-mobile@1x.jpg" srcset="img/foto-mobile@2x.jpg 2x" width="" height=""
-            alt="">
-        </picture>
-        <div class="about-us__social-list icon">
-          <a class="about-us__social-item  icon__instagram" href=""></a>
-          <a class="about-us__social-item  icon__vkontakte" href=""></a>
+        <h2 class="about-us__title">О нас</h2>
+
+        <div class="about-us__wrapper-text">
+          <h3 class="about-us__tagline">О кондитере</h3>
+          <p class="about-us__subtitle">Кондитер – как призвание</p>
+          <p class="about-us__text">Павел — профессиональный повар в различных
+            гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br>С ранних лет он
+            увлекался
+            утонченным мастерством и обратился к своим талантам как кондитер</p>
+          <p class="about-us__subtitle">Принцип – натуральные ингредиенты</p>
+          <p class="about-us__text">Сегодня Павел радует изделиями не только
+            близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является
+            выбор
+            натуральных ингредиентов.</p>
         </div>
+
+        <div class="about-us__wrapper-images">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/foto-tablet@1x.jpg 1x, img/foto-tablet@2x.jpg 2x">
+            <img class="about-us__images" src="img/foto-mobile@1x.jpg" srcset="img/foto-mobile@2x.jpg 2x" width="" height=""
+              alt="">
+          </picture>
+
+          <div class="about-us__social-list icon">
+            <a class="about-us__social-item  icon__instagram" href=""></a>
+            <a class="about-us__social-item  icon__vkontakte" href=""></a>
+          </div>
+        </div>
+
       </div>
-      <h3 class="about-us__tagline">О кондитере</h3>
-      <p class="about-us__subtitle">Кондитер – как призвание</p>
-      <p class="about-us__text">Павел — профессиональный повар в различных
-        гастрономических областях, но однажды его сердце покорило кондитерское искусство.<br>С ранних лет он увлекался
-        утонченным мастерством и обратился к своим талантам как кондитер</p>
-      <p class="about-us__subtitle">Принцип – натуральные ингредиенты</p>
-      <p class="about-us__text">Сегодня Павел радует изделиями не только
-        близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор
-        натуральных ингредиентов.</p>
     </section>
 
     <section class="advantage">
