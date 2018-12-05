@@ -2,6 +2,13 @@
   margin: 0 auto;
 }
 
+.customer-care__wrapper {
+  margin-top: 50px;
+  margin-left: 48px;
+  width: 280px;
+  height: 150px;
+}
+
 .customer-care__title {
   max-width: 280px;
   margin: 0 auto;
@@ -10,6 +17,9 @@
   padding-top: 30px;
   font-family: "PlayfairDisplayBold", "Ärial", sans-serif;
   font-size: 24px;
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+  }
 }
 
 .customer-care__tagline {
@@ -18,6 +28,10 @@
   padding: 0;
   font-family: "IntroScriptRH2Base", "Arial", sans-serif;
   font-size: 22px;
+  @media (min-width: @tablet-width) {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
 }
 
 .customer-care__text {
@@ -33,4 +47,15 @@
   width: 320px;
   height: 452px;
   background: url("/img/cake-mobile@1x.png") 50% 50% no-repeat, url("/img/plate-mobile@1x.png") 50% 50% no-repeat, url("/img/dot-mobile@1x.png") 50% 50% no-repeat;
+  @media (min-width: @tablet-width) {
+    margin-top: -300px;
+    width: 768px;
+    background-image: url("@{images}/bg-cake-tablet@1x.png");
+    background-size: 420px 430px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("@{images}/bg-cake-tablet@2x.png");
+    }
+  }
 }
