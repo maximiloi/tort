@@ -1,13 +1,27 @@
 .how-to-order {
-  margin: 0;
+  margin: 0 auto;
   margin-top: -270px;
   padding: 0;
   color: @white;
   min-height: 480px;
-  background: url("/img/gift@1x.jpg") 50% 50% no-repeat;
+  background: url("@{images}/bg-gift-mobile@1x.jpg") 50% 50% no-repeat;
   background-color: @button-color-hover;
+  background-size: 320px 482px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("@{images}/bg-gift-mobile@2x.jpg");
+  }
   @media (min-width: @tablet-width) {
+    width: 768px;
+    min-height: 380px;
     margin-top: -30px;
+    background: url("@{images}/bg-gift-tablet@1x.jpg");
+    background-color: @button-color-hover;
+    background-repeat: no-repeat;
+    background-size: 768px 520px;
+    background-position-y: -40px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("@{images}/bg-gift-tablet@2x.jpg");
+    }
   }
 }
 
@@ -20,6 +34,11 @@
   text-align: center;
   font-family: "PlayfairDisplayBold", "Ärial", sans-serif;
   font-size: 24px;
+  @media (min-width: @tablet-width) {
+    margin-left: 338px;
+    text-align: left;
+    font-size: 28px;
+  }
 }
 
 .how-to-order__list {
@@ -27,6 +46,9 @@
   max-width: 280px;
   margin: 0 auto;
   padding: 0;
+  @media (min-width: @tablet-width) {
+    margin-left: 338px;
+  }
 }
 
 .how-to-order__item {
@@ -34,6 +56,9 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+  @media (min-width: @tablet-width) {
+    width: 340px;
+  }
 }
 
 .how-to-order__item-title {

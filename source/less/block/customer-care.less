@@ -1,12 +1,18 @@
 .customer-care {
   margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
 }
 
 .customer-care__wrapper {
-  margin-top: 50px;
-  margin-left: 48px;
-  width: 280px;
-  height: 150px;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 280px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 48px;
+  }
 }
 
 .customer-care__title {
