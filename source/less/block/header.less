@@ -7,6 +7,10 @@
   @media (min-width: @tablet-width) {
     height: 60px;
   }
+  @media (min-width: @desktop-width) {
+    height: 80px;
+    background-color: @rose-background;
+  }
 }
 
 .header__wrapper {
@@ -17,6 +21,9 @@
     width: 672px;
     display: flex;
     justify-content: flex-start;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1218px;
   }
 }
 
@@ -35,15 +42,24 @@
     font-size: 20px;
     line-height: 60px;
   }
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 80px;
+  }
 }
 
 .header-phone {
   display: none;
   @media (min-width: @tablet-width) {
+    margin-left: auto;
     display: block;
-    flex-grow: 1;
     font-family: "CirceBold", "Arial", sans-serif;
     font-size: 15px;
     line-height: 60px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 46px;
   }
 }

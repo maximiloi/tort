@@ -1,10 +1,14 @@
 .main-nav {
   position: relative;
-  margin: 0 auto; // top: 10px;
+  margin: 0 auto;
   width: 100%;
-
   @media (min-width: @tablet-width) {
     width: 480px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    width: 800px;
   }
 }
 
@@ -26,6 +30,9 @@
     left: 0;
     width: 26px;
   }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -46,45 +53,51 @@
 .main-nav--opened .main-nav__toggle {
   top: -26px;
   right: 20px;
-
   @media (min-width: @tablet-width) {
-      top: 20px;
+    top: 20px;
   }
-    &::before, &::after {
-      position: absolute;
-      top: 7px;
-      left: 0;
-      width: 18px;
-      height: 2px;
-      background-color: @black;
-      content: "";
-    }
-    &::before {
-      box-shadow: none;
-      transform: rotate(45deg);
-    }
-    &::after {
-      transform: rotate(-45deg);
+  &::before,
+  &::after {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background-color: @black;
+    content: "";
+  }
+  &::before {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 60px;
+    left: -130px;
+  }
+  @media (min-width: @desktop-width) {
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: @desktop-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+    &--active {
+      display: block;
     }
   }
-  .main-nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    @media (min-width: @tablet-width) {
-      position: relative;
-      top: 60px;
-      left: -130px;
-    }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
   }
-  @media (max-width: @desktop-only) {
-    .main-nav--closed .site-list__item {
-      display: none;
-      &--active {
-        display: block;
-      }
-    }
-    .main-nav--nojs .main-nav__toggle {
-      display: none;
-    }
-  }
+}
