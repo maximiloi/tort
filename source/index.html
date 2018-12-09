@@ -99,14 +99,15 @@
     <section class="cake-order">
       <h2 class="cake-order__title">Индивидуальный заказ</h2>
       <p class="cake-order__tagline">Соберите торт в 3 шага</p>
+
       <ul class="cake-order__list">
         <li class="cake-order__items filling">
-          <h3 class="cake-order__items-title"><span>01</span> Выберите начинку</h3>
+          <h3 class="filling__title"><span>01</span> Выберите начинку</h3>
 
-          <div class="slider__wrapper">
-            <ul class="slider__list">
+          <div class="filling__container">
+            <ul class="filling__list">
 
-              <li class="slider  slider-fade  slider__filling  show">
+              <li class="filling__items  slider  slider__filling">
 
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/chocolate-ganache-desktop@1x.webp 1x, img/chocolate-ganache-desktop@2x.webp 2x">
@@ -115,78 +116,72 @@
 
                   <source media="(min-width: 1300px)" srcset="img/chocolate-ganache-desktop@1x.png 1x, img/chocolate-ganache-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/chocolate-ganache-tablet@1x.jpg 1x, img/chocolate-ganache-tablet@2x.jpg 2x">
-                  <img class="slider__images" src="img/chocolate-ganache-mobile@1x.jpg" srcset="img/chocolate-ganache-mobile@2x.jpg 2x"
-                    width="" height="" alt="">
+                  <img class="filling__images  slider__images" src="img/chocolate-ganache-mobile@1x.jpg" srcset="img/chocolate-ganache-mobile@2x.jpg 2x"
+                    width="240px" height="112px" alt="">
                 </picture>
 
-                <div class="slider__wrapper-tablet">
-                  <div class="slider__numbertext">1 / 3</div>
-                  <h4 class="slider__title">Шоколадный ганаш</h4>
-                  <p class="slider__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый
-                    шоколадный из всех возможных десертов!</p>
-                  <p class="slider__price">1000 руб/кг</p>
-                  <a href="" class="slider-wrapper__cake-button button button__choose-cake">Выбрать</a>
+                <div class="slider-dot__wrapper">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot last"></span>
                 </div>
 
+                <div class="filling__numberslide slider__numberslide">1 / 12</div>
+                <h4 class="filling__title  slider__title">Шоколадный ганаш</h4>
+                <p class="filling__text  slider__text">Ароматный шоколадный бисквит, густой шоколадный крем – самый
+                  шоколадный из всех возможных десертов!</p>
+                <p class="filling__price  slider__price">1000 руб/кг</p>
+                <a href="#" class="button  button__choose-filling">Выбрать</a>
+
               </li>
 
             </ul>
-
-            <div class="slider__control">
-              <a class="prev">&#10094;</a>
-              <a class="next">&#10095;</a>
-            </div>
-
-            <div class="slider-dot__wrapper">
-              <span class="slider-dot active"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot last"></span>
-            </div>
 
           </div>
-        </li>
-        <li class="cake-order__items size">
-          <h3 class="cake-order__items-title"><span>02</span>Размер</h3>
-          <div class="cake-order__slider slider-size slider-wrapper">
 
-            <ul class="cake-order__size-list">
-              <li class="cake-order__size-item show">
-                <div class="cake-order__size one">1 кг</div>
-                <p class="cake-order__size-text">17-18 см<span>(1 кг – 6 персон)</span></p>
+        </li>
+
+        <li class="cake-order__items size">
+          <h3 class="size__title"><span>02</span>Размер</h3>
+          <div class="size__container">
+
+            <ul class="size__list">
+              <li class="size__items show">
+                <div class="size__item one">1 кг</div>
+                <div class="slider-dot__wrapper">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                </div>
+                <p class="size__text">17-18 см<span>(1 кг – 6 персон)</span></p>
               </li>
-              <li class="cake-order__size-item">
-                <div class="cake-order__size two">2 кг</div>
-                <p class="cake-order__size-text">23-23 см<span>(10 – 12 персон)</span></p>
+              <li class="size__items">
+                <div class="size__item two">2 кг</div>
+                <p class="size__text">23-23 см<span>(10 – 12 персон)</span></p>
               </li>
-              <li class="cake-order__size-item">
-                <div class="cake-order__size five">5 кг</div>
-                <p class="cake-order__size-text">Два яруса 25 и 20см<span>(15 – 20 персон)</span></p>
+              <li class="size__items">
+                <div class="size__item five">5 кг</div>
+                <p class="size__text">Два яруса 25 и 20см<span>(15 – 20 персон)</span></p>
               </li>
-              <li class="cake-order__size-item">
-                <div class="cake-order__size eight">8 кг</div>
-                <p class="cake-order__size-text">Три яруса 30, 25 и 18 см<span>(25 – 30 персон)</span></p>
+              <li class="size__items">
+                <div class="size__item eight">8 кг</div>
+                <p class="size__text">Три яруса 30, 25 и 18 см<span>(25 – 30 персон)</span></p>
               </li>
             </ul>
-
-            <div class="slider-dot__wrapper">
-              <span class="slider-dot active" onclick="currentSlide(1)"></span>
-              <span class="slider-dot" onclick="currentSlide(2)"></span>
-              <span class="slider-dot" onclick="currentSlide(3)"></span>
-              <span class="slider-dot" onclick="currentSlide(4)"></span>
-            </div>
 
             <a href="" class="slider-wrapper__cake-button button button__choose-size">Выбрать</a>
           </div>
         </li>
         <li class="cake-order__items  decor">
-          <h3 class="cake-order__items-title"><span>03</span> Оформление</h3>
+          <h3 class="decor__title"><span>03</span> Оформление</h3>
 
-          <div class="slider__wrapper  slider__wrapper-decor">
-            <ul class="slider__list slider__list--decor">
+          <div class="decor__container">
+            <ul class="decor__list">
 
-              <li class="slider-fade slider__decor slider tablet">
+              <li class="decor__items  slider  slider__decor">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
@@ -194,15 +189,15 @@
 
                   <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/berrys-tablet@1x.png 1x, img/berrys-tablet@2x.png 2x">
-                  <img class="slider__images" src="img/marshmallow-mobile@1x.jpg" srcset="img/marshmallow-mobile@2x.jpg 2x"
+                  <img class="decor__images" src="img/marshmallow-mobile@1x.jpg" srcset="img/marshmallow-mobile@2x.jpg 2x"
                     width="" height="" alt="">
                 </picture>
-                <p class="slider__decor-name text-center">Ягодное ассорти</p>
-                <p class="slider__decor-price">700 руб/кг</p>
-
-                <a href="" class="slider-wrapper__cake-button button button__choose-decor">Выбрать</a>
+                <div class="decor__numberslide slider__numberslide">1 / 35</div>
+                <p class="decor__name  decor__name--center">Ягодное ассорти</p>
+                <p class="decor__price">700 руб/кг</p>
               </li>
-              <li class="slider-fade slider__decor slider show">
+
+              <li class="decor__items  slider  slider__decor  show">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/-desktop@1x.webp 1x, img/-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/-tablet@1x.webp 1x, img/-tablet@2x.webp 2x">
@@ -210,33 +205,29 @@
 
                   <source media="(min-width: 1300px)" srcset="img/-desktop@1x.png 1x, img/-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/marshmallow-tablet@1x.png 1x, img/marshmallow-tablet@2x.png 2x">
-                  <img class="slider__images" src="img/marshmallow-mobile@1x.jpg" srcset="img/marshmallow-mobile@2x.jpg 2x"
-                    width="" height="" alt="">
+                  <img class="decor__images" src="img/marshmallow-mobile@1x.jpg" srcset="img/marshmallow-mobile@2x.jpg 2x"
+                    width="169px" height="" alt="">
                 </picture>
-                <p class="slider__decor-name text-center">Маршмэллоу</p>
-                <p class="slider__decor-price">600 руб/кг</p>
+                <div class="slider-dot__wrapper">
+                  <span class="slider-dot active"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot"></span>
+                  <span class="slider-dot last"></span>
+                </div>
+                <div class="decor__numberslide slider__numberslide">1 / 35</div>
+                <p class="decor__name decor__name--center">Маршмэллоу</p>
+                <p class="decor__price">600 руб/кг</p>
 
-                <a href="" class="slider-wrapper__cake-button button button__choose-decor">Выбрать</a>
+                <a href="" class="button button__choose-decor">Выбрать</a>
               </li>
             </ul>
 
-            <div class="slider__control slider__control-decor">
-              <a class="prev">&#10094;</a>
-              <a class="slider__control-decor next">&#10095;</a>
-            </div>
-
-            <div class="slider-dot__wrapper">
-              <span class="slider-dot active"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot"></span>
-              <span class="slider-dot last"></span>
-            </div>
-
           </div>
         </li>
+
         <li class="cake-order__items  total">
           <h5 class="total__title">Ваш выбор</h5>
           <div class="total__wrapper">
@@ -461,7 +452,7 @@
   </footer>
 
   <script src="js/script.js"></script>
-  <script src="js/slider.js"></script>
+  <!-- <script src="js/slider.js"></script> -->
 </body>
 
 </html>
