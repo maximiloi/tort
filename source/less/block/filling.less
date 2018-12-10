@@ -46,6 +46,12 @@
   }
 }
 
+.filling__items {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
 .filling__list {
   padding: 0;
   margin: 0;
@@ -73,6 +79,17 @@
     opacity: 0.7;
     top: 210px;
     right: -70px;
+  }
+}
+
+.filling__title-slider {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  font-family: "CirceBold", "Arial", sans-serif;
+  font-size: 16px;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
   }
 }
 

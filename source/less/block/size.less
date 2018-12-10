@@ -36,6 +36,9 @@
   margin: 0 auto;
   padding: 0;
   width: 240px;
+  @media (min-width: @tablet-width) {
+    width: 728px;
+  }
 }
 
 .size__list {
@@ -68,6 +71,9 @@
   border: 4px dotted black;
   border-radius: 50%;
   text-align: center;
+  &:hover {
+    background-color: rgba(227, 53, 61, 0.1);
+  }
 }
 
 .one {
@@ -99,8 +105,8 @@
     height: 85px;
     border: 4px dotted black;
     border-radius: 50%;
-    top: 15px;
-    left: 15px;
+    top: 13px;
+    left: 13px;
   }
 }
 
@@ -126,8 +132,8 @@
     height: 65px;
     border: 4px dotted black;
     border-radius: 50%;
-    top: 30px;
-    left: 30px;
+    top: 33px;
+    left: 33px;
   }
 }
 
