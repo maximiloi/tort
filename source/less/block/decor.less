@@ -11,6 +11,13 @@
       background-image: url("@{images}/bg-cake-decor-tablet@2x.png");
     }
   }
+  @media (min-width: @desktop-width) {
+    background-image: url("@{images}/bg-cake-decor-desktop@1x.png");
+    background-size: 252px 334px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("@{images}/bg-cake-decor-desktop@2x.png");
+    }
+  }
 }
 
 .decor__title {
@@ -54,6 +61,10 @@
     width: 420px;
     margin-left: 200px;
   }
+  @media (min-width: @desktop-width) {
+    width: 680px;
+    margin-left: 370px;
+  }
 }
 
 .decor__list {
@@ -88,6 +99,9 @@
     width: 210px;
     margin-left: 0;
   }
+  @media (min-width: @desktop-width) {
+    width: 320px;
+  }
 }
 
 .decor__numberslide {
@@ -104,6 +118,9 @@
     top: 220px;
     right: -50px;
   }
+  @media (min-width: @desktop-width) {
+    top: 380px;
+  }
 }
 
 .decor__name {
@@ -115,6 +132,10 @@
   text-align: center;
   @media (min-width: @tablet-width) {
     margin-top: -80px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: -110px;
+    font-size: 20px;
   }
 }
 
@@ -128,6 +149,9 @@
   @media (min-width: @tablet-width) {
     font-size: 14px;
     margin-bottom: 0;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 22px;
   }
 }
 
@@ -146,5 +170,8 @@
 .decor__slider .next {
   @media (min-width: @tablet-width) {
     right: -480px;
+  }
+  @media (min-width: @desktop-width) {
+    right: -700px;
   }
 }

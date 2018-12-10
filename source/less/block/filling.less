@@ -29,6 +29,16 @@
       font-size: 36px;
       line-height: 50px;
     }
+    @media (min-width: @desktop-width) {
+      font-size: 27px;
+      line-height: 27px;
+      margin-left: 85px;
+      & span {
+        padding-top: 75px;
+        font-size: 58px;
+        line-height: 58px;
+      }
+    }
   }
 }
 
@@ -40,9 +50,10 @@
   @media (min-width: @tablet-width) {
     width: 445px;
     top: -40px;
-    &-decor {
-      margin-left: 250px;
-    }
+  }
+  @media (min-width: @desktop-width) {
+    width: 660px;
+    top: -80px;
   }
 }
 
@@ -63,6 +74,14 @@
     width: 210px;
     margin-right: 25px;
   }
+  @media (min-width: @desktop-width) {
+    width: 345px;
+    margin-right: 40px;
+  }
+}
+
+.filling__wrapper-tablet {
+  align-content: center;
 }
 
 .filling__numberslide {
@@ -80,6 +99,10 @@
     top: 210px;
     right: -70px;
   }
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    top: 360px;
+  }
 }
 
 .filling__title-slider {
@@ -89,7 +112,12 @@
   font-family: "CirceBold", "Arial", sans-serif;
   font-size: 16px;
   @media (min-width: @tablet-width) {
+    margin-top: 20px;
     font-size: 18px;
+  }
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+    font-size: 20px;
   }
 }
 
@@ -101,6 +129,10 @@
   font-size: 14px;
   @media (min-width: @tablet-width) {
     width: 180px;
+  }
+  @media (min-width: @tablet-width) {
+    width: 270px;
+    font-size: 18px;
   }
 }
 
@@ -122,6 +154,10 @@
   text-align: center;
   @media (min-width: @tablet-width) {
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: @tablet-width) {
+    font-size: 22px;
+    margin-bottom: 60px;
   }
 }

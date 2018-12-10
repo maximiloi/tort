@@ -30,6 +30,16 @@
       line-height: 50px;
     }
   }
+  @media (min-width: @desktop-width) {
+    font-size: 27px;
+    line-height: 27px;
+    margin-left: 85px;
+    & span {
+      padding-top: 75px;
+      font-size: 58px;
+      line-height: 58px;
+    }
+  }
 }
 
 .size__container {
@@ -38,6 +48,10 @@
   width: 240px;
   @media (min-width: @tablet-width) {
     width: 728px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 840px;
+    margin-top: -40px;
   }
 }
 
@@ -148,5 +162,8 @@
     margin: 0;
     padding: 0;
     display: block;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 150px;
   }
 }
