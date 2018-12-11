@@ -17,6 +17,14 @@
       background-image: url("@{images}/bg-reviews-tablet@2x.png");
     }
   }
+  @media (min-width: @desktop-width) {
+    max-width: 1366px;
+    background-image: url("@{images}/bg-reviews-desktop@1x.png");
+    background-size: 1366px 150px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("@{images}/bg-reviews-desktop@2x.png");
+    }
+  }
 }
 
 .reviews__title {
@@ -29,6 +37,11 @@
     padding-top: 45px;
     font-size: 28px;
   }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+    padding-top: 115px;
+    font-size: 40px;
+  }
 }
 
 .reviews__slider {
@@ -38,6 +51,9 @@
     align-items: center;
     width: 420px;
     margin: 0 auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 620px;
   }
 }
 
@@ -52,6 +68,11 @@
     width: 100px;
     height: 100px;
     margin-right: 30px;
+  }
+  @media (min-width: @tablet-width) {
+    width: 210px;
+    height: 210px;
+    margin-right: 55px;
   }
 }
 
@@ -69,6 +90,9 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
   }
+  @media (min-width: @desktop-width) {
+    font-size: 27px;
+  }
 }
 
 .reviews__author-description {
@@ -81,6 +105,9 @@
   @media (min-width: @tablet-width) {
     font-size: 14px;
   }
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .reviews__author-text {
@@ -92,6 +119,10 @@
   @media (min-width: @tablet-width) {
     width: 255px;
     font-size: 14px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 355px;
+    font-size: 19px;
   }
 }
 
@@ -110,17 +141,18 @@
   position: absolute;
   right: -5px;
   bottom: 0;
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
-// .reviews__slider {
-//   @media (min-width: @tablet-width) {
-//     position: absolute;
-//   }
-// }
 .reviews__slider .prev {
   @media (min-width: @tablet-width) {
     left: -80px;
     top: -95px;
+  }
+  @media (min-width: @desktop-width) {
+    top: -135px;
   }
 }
 
@@ -128,5 +160,8 @@
   @media (min-width: @tablet-width) {
     right: -80px;
     top: -95px;
+  }
+  @media (min-width: @desktop-width) {
+    top: -135px;
   }
 }
