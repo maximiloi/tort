@@ -3,6 +3,9 @@
   @media (min-width: @tablet-width) {
     width: 768px;
   }
+  @media (min-width: @desktop-width) {
+    width: 1366px;
+  }
 }
 
 .customer-care__wrapper {
@@ -12,6 +15,10 @@
     height: 150px;
     margin-top: 50px;
     margin-left: 48px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 73px;
+    width: 450px;
   }
 }
 
@@ -26,6 +33,12 @@
   @media (min-width: @tablet-width) {
     font-size: 28px;
   }
+  @media (min-width: @desktop-width) {
+    max-width: 450px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding-top: 180px;
+  }
 }
 
 .customer-care__tagline {
@@ -38,6 +51,10 @@
     font-size: 26px;
     margin-bottom: 10px;
   }
+  @media (min-width: @desktop-width) {
+    max-width: 450px;
+    font-size: 35px;
+  }
 }
 
 .customer-care__text {
@@ -46,6 +63,10 @@
   padding: 0;
   font-family: "CirceRegular", "Arial", sans-serif;
   font-size: 14px;
+  @media (min-width: @desktop-width) {
+    max-width: 450px;
+    font-size: 20px;
+  }
 }
 
 .customer-care__picture {
@@ -62,6 +83,16 @@
     background-repeat: no-repeat;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/bg-cake-tablet@2x.png");
+    }
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: -300px;
+    width: 1366px;
+    height: 820px;
+    background-image: url("@{images}/bg-cake-desktop@1x.png");
+    background-size: 768px 802px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("@{images}/bg-cake-desktop@2x.png");
     }
   }
 }
