@@ -9,9 +9,11 @@
   background-position-y: -40px;
   background-size: cover;
   background-image: url("@{images}/intro-picture-mobile@1x.png");
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("@{images}/intro-picture-mobile@2x.png");
   }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -22,9 +24,11 @@
     background-size: 496px 571px;
     background-position-x: right;
     background-position-y: 13px;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/intro-picture-tablet@2x.png");
     }
+
     @media (min-width: @desktop-width) {
       width: 1366px;
       height: 930px;
@@ -33,6 +37,7 @@
       background-size: 1008px 918px;
       background-position-x: right;
       background-position-y: 13px;
+
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("@{images}/intro-picture-desktop@2x.png");
       }
@@ -51,6 +56,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 37px;
+
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-left: 48px;
@@ -63,6 +69,7 @@
     text-align: left;
     letter-spacing: 4px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 72px;
     margin-top: 155px;
@@ -81,6 +88,7 @@
   font-size: 22px;
   line-height: 10px;
   color: @tagline-color;
+
   @media (min-width: @tablet-width) {
     margin-left: 48px;
     margin-bottom: 35px;
@@ -88,6 +96,7 @@
     font-size: 36px;
     line-height: 77px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 72px;
     margin-bottom: 40px;
@@ -98,6 +107,7 @@
 
 .intro__text-wrapper {
   margin-bottom: 57px;
+
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-left: 65px;
@@ -106,6 +116,7 @@
     display: flex;
     width: 460px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 85px;
   }
@@ -121,8 +132,10 @@
   font-size: 14px;
   font-weight: 400;
   text-align: left;
+
   @media (min-width: @tablet-width) {
     width: 85px;
+
     &:last-child {
       width: 180px;
     }
@@ -136,6 +149,7 @@
     margin-bottom: 170px;
     width: 94px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 72px;
   }

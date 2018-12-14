@@ -1,8 +1,10 @@
 .customer-care {
   margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     width: 768px;
   }
+
   @media (min-width: @desktop-width) {
     width: 1366px;
   }
@@ -16,6 +18,7 @@
     margin-top: 50px;
     margin-left: 48px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 73px;
     width: 450px;
@@ -30,9 +33,11 @@
   padding-top: 30px;
   font-family: "PlayfairDisplayBold", "Ärial", sans-serif;
   font-size: 24px;
+
   @media (min-width: @tablet-width) {
     font-size: 28px;
   }
+
   @media (min-width: @desktop-width) {
     max-width: 450px;
     font-size: 40px;
@@ -47,10 +52,12 @@
   padding: 0;
   font-family: "IntroScriptRH2Base", "Arial", sans-serif;
   font-size: 22px;
+
   @media (min-width: @tablet-width) {
     font-size: 26px;
     margin-bottom: 10px;
   }
+
   @media (min-width: @desktop-width) {
     max-width: 450px;
     font-size: 35px;
@@ -63,6 +70,7 @@
   padding: 0;
   font-family: "CirceRegular", "Arial", sans-serif;
   font-size: 14px;
+
   @media (min-width: @desktop-width) {
     max-width: 450px;
     font-size: 20px;
@@ -74,6 +82,7 @@
   width: 320px;
   height: 452px;
   background: url("/img/cake-mobile@1x.png") 50% 50% no-repeat, url("/img/plate-mobile@1x.png") 50% 50% no-repeat, url("/img/dot-mobile@1x.png") 50% 50% no-repeat;
+
   @media (min-width: @tablet-width) {
     margin-top: -300px;
     width: 768px;
@@ -81,16 +90,19 @@
     background-size: 420px 430px;
     background-position-x: right;
     background-repeat: no-repeat;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/bg-cake-tablet@2x.png");
     }
   }
+
   @media (min-width: @desktop-width) {
     margin-top: -300px;
     width: 1366px;
     height: 820px;
     background-image: url("@{images}/bg-cake-desktop@1x.png");
     background-size: 768px 802px;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/bg-cake-desktop@2x.png");
     }

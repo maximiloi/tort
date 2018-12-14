@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 0;
   width: 280px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     width: 768px;
@@ -11,15 +12,18 @@
     background-position-x: right;
     background-position-y: bottom;
     background-repeat: no-repeat;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/bg-contact-tablet@2x.png");
     }
   }
+
   @media (min-width: @desktop-width) {
     width: 1366px;
     height: 880px;
     background-image: url("@{images}/bg-contact-desktop@1x.png");
     background-size: 886px 636px;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/bg-contact-desktop@2x.png");
     }
@@ -31,14 +35,17 @@
     margin-left: 48px;
     margin-top: 40px;
     width: 320px;
+
     &:last-child {
       margin-top: 110px;
     }
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 73px;
     margin-top: 80px;
     width: 550px;
+
     &:last-child {
       margin-top: 110px;
     }
@@ -53,6 +60,7 @@
   text-align: center;
   font-family: "PlayfairDisplayBold", "Arial", sans-serif;
   font-size: 24px;
+
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-bottom: 10px;
@@ -60,6 +68,7 @@
     text-align: left;
     font-size: 28px;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 40px;
     margin-bottom: 30px;
@@ -74,9 +83,11 @@
   font-size: 22px;
   line-height: 10px;
   color: @tagline-color;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 35px;
     margin-bottom: 30px;
@@ -89,6 +100,7 @@
   padding: 0;
   font-family: "CirceRegular", "Arial", sans-serif;
   font-size: 14px;
+
   @media (min-width: @desktop-width) {
     font-size: 20px;
     margin-bottom: 20px;
@@ -118,9 +130,11 @@ br {
   padding: 6px 0 4px 10px;
   border: 1px solid #cecece;
   border-radius: 3px;
+
   @media (min-width: @tablet-width) {
     width: 308px;
   }
+
   @media (min-width: @desktop-width) {
     border: none;
     height: 15px;
@@ -142,9 +156,11 @@ br {
   border-radius: 3px;
   padding: 8px 0 8px 10px;
   margin-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     width: 308px;
   }
+
   @media (min-width: @desktop-width) {
     border: none;
     height: 20px;
@@ -169,6 +185,7 @@ br {
   font-size: 19px;
   text-transform: none;
   border: none;
+
   @media (min-width: @tablet-width) {
     margin: 0;
   }
@@ -178,6 +195,7 @@ br {
   width: 220px;
   font-family: "CirceRegular", "Arial", sans-serif;
   font-size: 14px;
+
   @media (min-width: @desktop-width) {
     width: 320px;
     font-size: 20px;

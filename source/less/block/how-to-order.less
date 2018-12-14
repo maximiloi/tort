@@ -10,22 +10,27 @@
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-size: 320px;
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("@{images}/bg-gift-mobile@2x.jpg");
   }
+
   @media (min-width: @tablet-width) {
     min-height: 380px;
     margin-top: -30px;
     background-size: 768px;
     background-image: url("@{images}/bg-gift-tablet@1x.jpg");
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/bg-gift-tablet@2x.jpg");
     }
   }
+
   @media (min-width: @desktop-width) {
     min-height: 703px;
     background-size: 1366px;
     background-image: url("@{images}/bg-gift-desktop@1x.jpg");
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("@{images}/bg-gift-desktop@2x.jpg");
     }
@@ -37,9 +42,11 @@
   max-width: 280px;
   margin: 0 auto;
   padding: 0;
+
   @media (min-width: @tablet-width) {
     max-width: 768px;
   }
+
   @media (min-width: @desktop-width) {
     max-width: 1366px;
   }
@@ -55,10 +62,12 @@
   text-align: center;
   font-family: "PlayfairDisplayBold", "Ärial", sans-serif;
   font-size: 24px;
+
   @media (min-width: @tablet-width) {
     width: 768px;
     font-size: 28px;
   }
+
   @media (min-width: @desktop-width) {
     width: 490px;
     margin-bottom: 50px;
@@ -72,10 +81,12 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+
   @media (min-width: @tablet-width) {
     margin-left: 338px;
     width: 340px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 820px;
     width: 490px;
@@ -87,6 +98,7 @@
   padding: 0;
   font-family: "CirceBold", "Arial", sans-serif;
   font-size: 15px;
+
   @media (min-width: @desktop-width) {
     font-size: 21px;
   }
@@ -97,6 +109,7 @@
   padding: 0;
   font-family: "CirceRegular", "Arial", sans-serif;
   font-size: 14px;
+
   @media (min-width: @desktop-width) {
     font-size: 20px;
   }
@@ -108,6 +121,7 @@
   font-family: "PlayfairDisplayBold", "Arial", sans-serif;
   font-size: 35px;
   min-width: 30px;
+
   @media (min-width: @desktop-width) {
     margin-right: 20px;
     margin-top: -30px;
