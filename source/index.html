@@ -29,24 +29,12 @@
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__modal">
           <ul class="main-nav__list  site-list">
-            <li class="site-list__item">
-              <a href="#">Наши торты</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Индивидуальный заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Отзывы</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">О нас</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Как заказать</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Контакты</a>
-            </li>
+            <li class="site-list__item"><a href="#our-cakes">Наши торты</a></li>
+            <li class="site-list__item"><a href="#individual-order">Индивидуальный заказ</a></li>
+            <li class="site-list__item"><a href="#reviews">Отзывы</a></li>
+            <li class="site-list__item"><a href="#about-us">О нас</a></li>
+            <li class="site-list__item"><a href="#how-to-order">Как заказать</a></li>
+            <li class="site-list__item"><a href="#contact">Контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -63,12 +51,12 @@
         <p class="intro__text  icon  icon__natural-ingredients">Натуральные ингридиенты</p>
         <p class="intro__text  icon  icon__deliveri">Доставка бесплатно<br> при заказе от 2000 рублей*</p>
       </div>
-      <a href="" class="intro__button button button__choose-cake">Выбрать торт</a>
+      <a href="#individual-order" class="intro__button button button__choose-cake">Выбрать торт</a>
     </section>
 
     <section class="cake-catalog">
       <div class="cake-catalog__wrapper">
-        <h2 class="cake-catalog__title">Наши торты</h2>
+        <h2 class="cake-catalog__title" id="our-cakes">Наши торты</h2>
         <div class="cake-catalog__list">
           <div class="cake-catalog__wrapper-tablet">
 
@@ -106,7 +94,7 @@
     </section>
 
     <section class="cake-order">
-      <h2 class="cake-order__title">Индивидуальный заказ</h2>
+      <h2 class="cake-order__title" id="individual-order">Индивидуальный заказ</h2>
       <p class="cake-order__tagline">Соберите торт в 3 шага</p>
 
       <ul class="cake-order__list">
@@ -241,9 +229,9 @@
                 <div class="decor__numberslide slider__numberslide">2 / 35</div>
                 <p class="decor__name decor__name--center">Маршмэллоу</p>
                 <p class="decor__price">600 руб/кг</p>
-                <a href="" class="button button__choose-decor">Выбрать</a>
               </li>
             </ul>
+            <a href="" class="button button__choose-decor">Выбрать</a>
             <div class="slider slider__control decor__slider">
               <div class="slider__box"></div>
               <div class="slider__arrow next"></div>
@@ -277,7 +265,7 @@
     </section>
 
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
+      <h2 class="reviews__title" id="reviews">Отзывы</h2>
       <div class="reviews__slider  slider">
         <picture>
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/author-images-desktop@1x.webp 1x, img/author-images-desktop@2x.webp 2x">
@@ -320,7 +308,7 @@
     <section class="about-us">
       <div class="about-us__wrapper">
 
-        <h2 class="about-us__title">О нас</h2>
+        <h2 class="about-us__title" id="about-us">О нас</h2>
 
         <div class="about-us__wrapper-text">
           <h3 class="about-us__tagline">О кондитере</h3>
@@ -382,7 +370,7 @@
     </section>
 
     <section class="how-to-order">
-      <h2 class="how-to-order__title">Как заказать</h2>
+      <h2 class="how-to-order__title" id="how-to-order">Как заказать</h2>
       <ul class="how-to-order__list">
         <li class="how-to-order__item">
           <p class="how-to-order__item-number">1</p>
@@ -412,7 +400,7 @@
 
     <section class="contact">
       <div class="contact__wrapper-tablet">
-        <h2 class="contact__title">Контакты</h2>
+        <h2 class="contact__title" id="contact">Контакты</h2>
         <p class="contact__tagline">Остались вопросы?</p>
         <p class="contact__call">Заполните форму ниже и наш кондитер<br> свяжется с Вами</p>
         <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
@@ -459,21 +447,13 @@
     <div class="footer__wrapper">
       <a href="#" class="footer__logo">Cakes</a>
       <ul class="footer__list">
-        <li class="footer__item">Наши торты</li>
-        <li class="footer__item">Индивидуальный заказ</li>
-        <li class="footer__item">Отзывы</li>
-        <li class="footer__item">О нас</li>
-        <li class="footer__item">Как заказать</li>
-        <li class="footer__item">Контакты</li>
+        <li class="footer__item"><a href="#our-cakes">Наши торты</a></li>
+        <li class="footer__item"><a href="#individual-order">Индивидуальный заказ</a></li>
+        <li class="footer__item"><a href="#reviews">Отзывы</a></li>
+        <li class="footer__item"><a href="#about-us">О нас</a></li>
+        <li class="footer__item"><a href="#how-to-order">Как заказать</a></li>
+        <li class="footer__item"><a href="#contact">Контакты</a></li>
         <li class="footer__item">8 800 800 00 00</li>
-      </ul>
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
-        </li>
-        <li class="footer__social-item">
-          <a href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
-        </li>
       </ul>
     </div>
     <div class="footer__bootom">
@@ -482,7 +462,7 @@
   </footer>
 
   <script src="js/script.js"></script>
-  <!-- <script src="js/slider.js"></script> -->
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>
